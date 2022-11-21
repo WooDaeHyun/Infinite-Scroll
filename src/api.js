@@ -1,5 +1,4 @@
-const API_END_POINT = "https://kdt.roto.codes";
-
+//API 확인해야함!!!
 export const request = async (url) => {
   try {
     const res = await fetch(`${API_END_POINT}${url}`);
