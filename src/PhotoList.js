@@ -40,12 +40,6 @@ export default function PhotoList({ $target, initialState, onScrollEnded }) {
   };
   this.render();
 
-  $photoList.addEventListener("click", (e) => {
-    if (e.target.className === "PhotoList__loadMore" && !this.state.isLoading) {
-      onScrollEnded();
-    }
-  });
-
   window.addEventListener("scroll", () => {
     const { isLoading, totalCount, photos } = this.state;
     const isScrollEnded =
