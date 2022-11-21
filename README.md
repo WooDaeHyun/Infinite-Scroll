@@ -22,4 +22,8 @@ photoList
 
 app >> photoList >> app >> photoList >> app
 
-인터셉션 옵져버!
+무한 스크롤 UI를 구현하는 방법은 크게 두 가지
+scroll 이벤트를 이용해 계산
+intersection Observer
+
+상황에 따라 무한 스크롤UI 보다는 직접 더 불러오는 인터랙션을 통해 로딩하는게 더 나을 수 있다.
